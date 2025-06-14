@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrossFit WOD Tracker</title>
+    <!-- Materialize CSS for quick styling -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+</head>
+<body class="container">
+    <h3 class="center-align">CrossFit WOD Tracker</h3>
+
+    <div id="auth-section" class="section">
+        <button id="google-login" class="btn red darken-1">Sign in with Google</button>
+        <button id="facebook-login" class="btn blue darken-4">Sign in with Facebook</button>
+    </div>
+
+    <ul id="tabs" class="tabs">
+        <li class="tab col s6"><a href="#log-tab" class="active">Log Workout</a></li>
+        <li class="tab col s6"><a href="#analytics-tab">Analytics</a></li>
+    </ul>
+
+    <div id="log-tab" class="col s12">
+        <div class="section">
+            <label for="wod-text">Paste WOD Details</label>
+            <textarea id="wod-text" class="materialize-textarea"></textarea>
+        </div>
+        <div class="section">
+            <label for="wod-image">Or upload a photo</label>
+            <input type="file" id="wod-image" accept="image/*">
+            <div id="ocr-status" class="blue-text"></div>
+        </div>
+        <button id="save-wod" class="btn">Save WOD</button>
+    </div>
+
+    <div id="analytics-tab" class="col s12" style="display:none;">
+        <canvas id="analytics-chart"></canvas>
+    </div>
+
+    <!-- Firebase & other libs via CDN -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.0.4/tesseract.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
