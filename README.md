@@ -23,3 +23,4 @@ photos of the whiteboard using Tesseract.js, and a basic analytics chart.
 
 This setup uses CDN links for all dependencies so it can be hosted without a
 build step or server-side code.
+
