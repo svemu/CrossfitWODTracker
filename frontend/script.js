@@ -10,6 +10,10 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const db = firebase.firestore();
 
+// Apple-style chart defaults
+Chart.defaults.color = '#1d1d1f';
+Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif';
+
 // Google sign-in
 const googleBtn = document.getElementById('google-login');
 if (googleBtn) {
@@ -125,7 +129,7 @@ function renderChart(labels, data) {
       datasets: [{
         label: 'Workout text length',
         data,
-        borderColor: 'blue',
+        borderColor: '#0071e3',
         fill: false,
       }]
     },

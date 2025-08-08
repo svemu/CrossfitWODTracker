@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CrossFit WOD Tracker</title>
     <!-- Materialize CSS for quick styling -->
-    <!-- Comment for kicking of a commit, delete later -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="container">
     <h3 class="center-align">CrossFit WOD Tracker</h3>
 
     <div id="auth-section" class="section">
-        <button id="google-login" class="btn red darken-1">Sign in with Google</button>
-        <button id="facebook-login" class="btn blue darken-4">Sign in with Facebook</button>
+        <button id="google-login" class="btn">Sign in with Google</button>
+        <button id="facebook-login" class="btn">Sign in with Facebook</button>
     </div>
 
     <ul id="tabs" class="tabs">
@@ -29,7 +29,7 @@
         <div class="section">
             <label for="wod-image">Or upload a photo</label>
             <input type="file" id="wod-image" accept="image/*">
-            <div id="ocr-status" class="blue-text"></div>
+            <div id="ocr-status"></div>
         </div>
         <button id="save-wod" class="btn">Save WOD</button>
     </div>
