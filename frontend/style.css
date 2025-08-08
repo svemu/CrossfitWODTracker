@@ -1,0 +1,62 @@
+/* Apple-inspired theme */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #1d1d1f;
+  margin: 0;
+  padding: 20px;
+}
+
+h3 {
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #0071e3;
+  border-radius: 12px;
+  text-transform: none;
+  box-shadow: none;
+}
+
+.btn:hover {
+  background-color: #0077ed;
+}
+
+#auth-section .btn {
+  margin-right: 10px;
+}
+
+.tabs .tab a {
+  color: #0071e3;
+  font-weight: 500;
+}
+
+.tabs .tab a.active {
+  color: #1d1d1f;
+  border-bottom: 2px solid #1d1d1f;
+}
+
+textarea.materialize-textarea {
+  border: 1px solid #d2d2d7;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+label {
+  color: #1d1d1f;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+}
+
+#save-wod {
+  margin-top: 20px;
+}
+
+#ocr-status {
+  color: #0071e3;
+  margin-top: 8px;
+}
